@@ -1,8 +1,8 @@
-import 'dotenv/config';
+import 'dotenv/config'
 import { get } from 'env-var';
 
 /**
- * Wrapper for the dotenv library in order to not use its methods directly and to only have one point of failure if the library is updated
+ * Wrapper for the dotenv and env-var libraries in order to not use its methods directly and to only have one point of failure if the library is updated
  */
 export const envs = {
 
@@ -14,6 +14,3 @@ export const envs = {
   JWT_SEED: get('JWT_SEED').required().asString(),
 
 }
-
-
-

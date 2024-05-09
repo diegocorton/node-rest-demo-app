@@ -2,7 +2,7 @@ version: '3.8'
 
 
 services:
-
+  
   mongo-db:
     image: mongo:6.0.6
     restart: always
@@ -13,3 +13,13 @@ services:
       - ./mongo:/data/db
     ports:
       - 27017:27017
+  
+  api:
+    build:
+      context: .
+      target: production
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
+      

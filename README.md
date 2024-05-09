@@ -9,8 +9,7 @@ Requirements: Node version 20.11 or higher, docker, docker-compose
 1. Download the source code
 2. Run `npm install` to install dependencies
 3. Create a .env file with the variables from .env.template
-4. Run `docker-compose up -d` to start MongoDB
-4. Run `npm run dev` to start the project
+4. Run `docker-compose up -d` to start both the web server container and mongo container
 
 ## Usage
 
